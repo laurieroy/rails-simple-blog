@@ -16,3 +16,4 @@ Ruby 2.6.3 | Rails 6.1.3 | PG | Bootsrap with FontAwesome UI  |
 ### TODO:
 - clean up Stimulus
 - fix JS
+- hack for sortable (elements_reflex)
