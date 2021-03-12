@@ -1,12 +1,18 @@
-# Simple Blog
-This was built following a [code-along](https://www.youtube.com/watch?v=MCEzxY9BbiU). 
-Authors have a special layout with more granular control
+# Simple Blog - WIP
+This was built following a [code-along](https://www.youtube.com/watch?v=MCEzxY9BbiU) by [TechmakerTV](https://www.techmaker.tv/content/building-a-blog-with-rails-6-part-1). I found it tyring to get impressive to work on another project and decided to follow along...
+
+Authors have a special layout with more granular admin control of posts. Publish is a StimulusReflex. The various elements can be rearranged using SortableJS.
 
 
-### gems
+### Gems
 * devise for auth
 * active_storage for images
+* rich_text for formatting text
 * stimulusJS for reflex actions - publish, unpublish
-* sortableJS for rearrange by drag-n-drop
+* sortableJS to rearrange elements by drag-n-drop
 
-Ruby 2.6.3 | Rails 6.1.3 | Material UI eventually. doing BS for now | 
+Ruby 2.6.3 | Rails 6.1.3 | PG | Bootsrap with FontAwesome UI  | 
+
+### TODO:
+- clean up Stimulus
+- fix JS

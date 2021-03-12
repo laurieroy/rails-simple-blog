@@ -90,8 +90,8 @@
 													method: :delete, class: "btn btn-dark mt-2 float-right delete-btn",
 													data: { confirm: "Are you sure?" } do %>
 													<i class="fas fa-trash"></i>
-											<% end %>
-											<%= image_tag(element.image) %>
+												<% end %>
+												<%= image_tag(element.image) %>
 											<% else %>
 												<%= form_with(model: [@post, element]) do |form| %>
 													<%= form.file_field :image %>
