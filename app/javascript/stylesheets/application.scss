@@ -1,4 +1,7 @@
 @import 'trix/dist/trix';
-@import 'actiontext';
-@import './base';
+@import "actiontext";
+@import "./base";
+
+// Readers
+@import "./readers/posts";
 
