@@ -39,7 +39,7 @@ module Authors
 
     private
       def set_element
-        @element = Element.find(params[:id])
+        @element = @post.elements.find(params[:id])
       end
   
       def set_post

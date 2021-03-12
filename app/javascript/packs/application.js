@@ -12,7 +12,7 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-const Trix = require("trix")
+require("trix")
 require("@rails/actiontext")
 
 import "controllers"
@@ -20,7 +20,7 @@ import Sortable from "sortablejs"
 
 import '../stylesheets/application';
 
-document.addEventListener('turbolink:load', () => {
+document.addEventListener('turbolinks:load', () => {
 	document.addEventListener('click', () => {
 		let element = event.target.closest('.paragraph-content')
 		if (!element) return;
@@ -39,8 +39,8 @@ document.addEventListener('turbolink:load', () => {
 		element.previousElementSibling.classList.remove('d-none')
 	})
 
-	let element = document.getElementById('elements')
-	Sortable.create(elements, { animation: 150 })
+	let sortable_element = document.getElementById('elements')
+	Sortable.create(sortable_elements, { animation: 150 })
 })
 
 
