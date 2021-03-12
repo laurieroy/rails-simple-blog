@@ -28,16 +28,16 @@ module Authors
     end
 
     private
-      def set_element
-        @element = @post.elements.find(params[:id])
-      end
-  
-      def set_post
-        @post = current_author.posts.find(params[:post_id])
-      end
+    def set_element
+      @element = @post.elements.find(params[:id])
+    end
 
-      def element_params
-        params.require(:element).permit(:element_type, :content, :image)
-      end
+    def set_post
+      @post = current_author.posts.find(params[:post_id])
+    end
+
+    def element_params
+      params.require(:element).permit(:element_type, :content, :image)
+    end
   end
 end
