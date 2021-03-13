@@ -1,10 +1,8 @@
 module Authors
   class StatsController < AuthorsController
     def index
-      @count_by_date = PageView.for_date_range(7.days.ago, Date.today).count_by_date
-        
-      @uniq_count_by_date = PageView.for_date_range(7.days.ago, Date.today)
-        .uniq_count_by_date
+      @count_by_date = PageView.count_by_date(7.days.ago, Date.today)
+      @uniq_count_by_date = PageView.uniq_count_by_date(7.days.ago, Date.today)
     end
   end
 end

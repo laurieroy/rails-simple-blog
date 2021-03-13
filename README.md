@@ -9,7 +9,7 @@ Authors have a special layout with more granular admin control of posts. Publish
 * active_storage for images
 * rich_text for formatting text
 * stimulusJS for reflex actions - publish, unpublish
-* sortableJS to rearrange elements by drag-n-drop
+* sortableJS to rearrange elements by drag-n-drop 
 
 Ruby 2.6.3 | Rails 6.1.3 | PG | Bootsrap with FontAwesome UI  | 
 
@@ -17,3 +17,5 @@ Ruby 2.6.3 | Rails 6.1.3 | PG | Bootsrap with FontAwesome UI  |
 - clean up Stimulus
 - fix JS
 - hack for sortable (elements_reflex)
+- sortable broke after adding in chart.js
+- 
