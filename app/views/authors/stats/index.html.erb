@@ -1,0 +1,37 @@
+<h4 class="mb-4">
+  <span>Stats</span>
+</h4>
+<div class="row">
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">7 day views</div>
+			</div>
+			<div class="card-body">
+				<canvas 
+					id="page-views" 
+					width="400" 
+					height="400" 
+					data-labels="<%= @count_by_date.keys %>" 
+					data-data="<%= @count_by_date.values %>"
+				></canvas>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">7 day unique views</div>
+			</div>
+			<div class="card-body">
+				<canvas 
+					id="uniq-page-views" 
+					width="400" 
+					height="400" 
+					data-labels="<%= @uniq_count_by_date.keys %>" 
+					data-data="<%= @uniq_count_by_date.values %>"
+				></canvas>
+			</div>
+		</div>
+	</div>
+</div>

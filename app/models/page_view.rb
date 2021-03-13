@@ -12,7 +12,7 @@ class PageView < Impression
 	end
 
 	scope :uniq_count_by_date, -> () do
-		select(:ip_address).distinct.group('date(created_at)'.count
+		select(:ip_address).distinct.group('date(created_at)').count
 	end
 
 	scope :count_by_date, -> () do
