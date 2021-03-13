@@ -15,13 +15,11 @@ module Authors
       redirect_to edit_post_path(@post), notice: notice
     end
 
-    # PATCH/PUT /elements/1
     def update
      @element.update(element_params)
         # redirect_to edit_post_path(@element.post)
     end
 
-    # DELETE /elements/1
     def destroy
       @element.destroy
       redirect_to edit_post_path(@element.post)
