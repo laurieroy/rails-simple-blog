@@ -37,6 +37,7 @@ module Authors
       redirect_to edit_post_path(@post)
     end
   
+    
     private
     def set_post
       @post = current_author.posts.friendly.find(params[:id])

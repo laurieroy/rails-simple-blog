@@ -2,6 +2,8 @@ class Post < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: [:slugged, :history, :finders]
 
+  is_impressionable
+  
   belongs_to :author
   has_many :elements
 
@@ -19,6 +21,6 @@ class Post < ApplicationRecord
   end
 
   def should_generate_new_friendly_id?
-    title.changed?
+    title_changed?
   end
 end

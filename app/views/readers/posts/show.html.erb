@@ -6,16 +6,17 @@
 			<div class="card-body">
 				<div class="px-5 py-4">
 					<h1 class="card-title mb-5"><%= @post.title %></h1>
-						byebug
-						<% @posts.elements.each do |element| %>
-							<% if element.image? %>
-								<div class="image-element mb-5">
-									<%= image_tag(element.image) %>
-								</div>
-							<% else %>
-								<div class="content-element mb-5">
-									<%= element.content %>
-								</div>
+						<% if @post %>
+						<% @post.elements.each do |element| %>
+								<% if element.image? %>
+									<div class="image-element mb-5">
+										<%= image_tag(element.image) %>
+									</div>
+								<% else %>
+									<div class="content-element mb-5">
+										<%= element.content %>
+									</div>
+								<% end %>
 							<% end %>
 						<% end %>
 				</div>
